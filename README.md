@@ -1,26 +1,15 @@
-<!--
+[![CircleCI](https://circleci.com/gh/giantswarm/resource.svg?style=shield)](https://circleci.com/gh/giantswarm/resource)
 
-    TODO:
+# resource
 
-    - Add the project to the CircleCI:
-      https://circleci.com/setup-project/gh/REPOSITORY_NAME
+Package resource implements a generic [operatorkit] resources for managing
+objects defined in [apiextensions] repository.
 
-    - Change the badge (with style=shield):
-      https://circleci.com/gh/giantswarm/REPOSITORY_NAME/edit#badges
-      If this is a private repository token with scope `status` will be needed.
+If you look for resources for built-in Kubernetes objects then operatorkit
+[resource/k8s] package is your friend.
 
-    - Change the top level header from `# template` to `# REPOSITORY_NAME` and
-      add appropriate description.
+[apiextensions]: https://github.com/giantswarm/apiextensions/
+[operatorkit]: https://github.com/giantswarm/operatorkit/
+[resource/k8s]: https://github.com/giantswarm/operatorkit/tree/master/resource/k8s/
 
--->
-[![CircleCI](https://circleci.com/gh/giantswarm/template.svg?style=shield&circle-token=cbabd7d13186f190fca813db4f0c732b026f5f6c)](https://circleci.com/gh/giantswarm/template)
 
-# template
-
-This is a template repository containing some basic files every repository
-needs.
-
-To use it just hit `Use this template` button or [this
-link][generate].
-
-[generate]: https://github.com/giantswarm/template/generate
