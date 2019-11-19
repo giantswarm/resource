@@ -22,7 +22,7 @@
 
 
 [[constraint]]
-  branch = "master"
+  branch = "k8s-1-16"
   name = "github.com/giantswarm/apiextensions"
 
 [[constraint]]
@@ -30,16 +30,24 @@
   name = "github.com/giantswarm/microerror"
 
 [[constraint]]
-  branch = "master"
+  branch = "k8s-1-16"
   name = "github.com/giantswarm/operatorkit"
 
 [[constraint]]
   name = "k8s.io/apimachinery"
-  version = "kubernetes-1.15.4"
+  version = "kubernetes-1.16.3"
 
 [[override]]
   name = "k8s.io/api"
-  version = "kubernetes-1.15.4"
+  version = "kubernetes-1.16.3"
+
+[[override]]
+  name = "k8s.io/apiextensions-apiserver"
+  version = "kubernetes-1.16.3"
+
+[[override]]
+  name = "k8s.io/client-go"
+  version = "kubernetes-1.16.3"
 
 
 
