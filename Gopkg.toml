@@ -22,7 +22,7 @@
 
 
 [[constraint]]
-  branch = "k8s-1-16"
+  branch = "master"
   name = "github.com/giantswarm/apiextensions"
 
 [[constraint]]
@@ -30,7 +30,7 @@
   name = "github.com/giantswarm/microerror"
 
 [[constraint]]
-  branch = "k8s-1-16"
+  branch = "master"
   name = "github.com/giantswarm/operatorkit"
 
 [[constraint]]
