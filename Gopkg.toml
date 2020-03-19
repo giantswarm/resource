@@ -21,17 +21,18 @@
 #
 
 
+
 [[constraint]]
-  branch = "master"
   name = "github.com/giantswarm/apiextensions"
+  version = "~0.1.0"
 
 [[constraint]]
-  branch = "master"
   name = "github.com/giantswarm/microerror"
+  version = "~0.1.0"
 
 [[constraint]]
-  branch = "master"
   name = "github.com/giantswarm/operatorkit"
+  version = "~0.1.0"
 
 [[constraint]]
   name = "k8s.io/apimachinery"
