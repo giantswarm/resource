@@ -7,5 +7,5 @@ require (
 	github.com/giantswarm/microerror v0.2.0
 	github.com/giantswarm/micrologger v0.3.1
 	github.com/giantswarm/operatorkit v0.2.0
-	k8s.io/apimachinery v0.16.6
+	k8s.io/apimachinery v0.18.0
 )
