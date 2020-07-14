@@ -20,7 +20,7 @@ func (r *Resource) ApplyDeleteChange(ctx context.Context, obj, deleteChange inte
 	for _, appCR := range appCRsToDelete {
 		r.logger.LogCtx(ctx, "level", "debug", "message", fmt.Sprintf("deleting App CR %#q in namespace %#q", appCR.Name, appCR.Namespace))
 
-		err := r.g8sClient.ApplicationV1alpha1().Apps(appCR.Namespace).Delete(appCR.Name, &metav1.DeleteOptions{})
+		err := r.g8sClient.ApplicationV1alpha1().Apps(appCR.Namespace).Delete(ctx, appCR.Name, metav1.DeleteOptions{})
 		if apierrors.IsNotFound(err) {
 			r.logger.LogCtx(ctx, "level", "debug", "message", fmt.Sprintf("already deleted App CR %#q in namespace %#q", appCR.Name, appCR.Namespace))
 		} else if err != nil {

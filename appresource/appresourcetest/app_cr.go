@@ -58,7 +58,7 @@ func NewAppCRFromFilled(modifyFunc func(v *applicationv1alpha1.App)) *applicatio
 		Status: applicationv1alpha1.AppStatus{
 			AppVersion: "test-status",
 			Release: applicationv1alpha1.AppStatusRelease{
-				LastDeployed: applicationv1alpha1.DeepCopyTime{
+				LastDeployed: metav1.Time{
 					Time: time.Date(2019, 2, 12, 12, 4, 0, 0, time.UTC),
 				},
 				Status: "test-status-release-status",
