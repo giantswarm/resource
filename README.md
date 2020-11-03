@@ -10,6 +10,6 @@ If you look for resources for built-in Kubernetes objects then operatorkit
 
 [apiextensions]: https://github.com/giantswarm/apiextensions/
 [operatorkit]: https://github.com/giantswarm/operatorkit/
-[resource/k8s]: https://github.com/giantswarm/operatorkit/tree/master/resource/k8s/
+[pkg/resource/k8s]: https://github.com/giantswarm/operatorkit/tree/master/pkg/resource/k8s/
 
 
