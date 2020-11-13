@@ -205,10 +205,10 @@ github.com/ghodss/yaml v1.0.0/go.mod h1:4dBDuWmgqj2HViK6kFavaiC9ZROes6MMH2rRYeME
 github.com/giantswarm/apiextensions/v2 v2.0.0 h1:rKUHhiM8herDiNSgkfdLwqs+Pzrews2T/8JJ4Z4JCmA=
 github.com/giantswarm/apiextensions/v2 v2.0.0/go.mod h1:/qSx5jA2F5um0ipvVDMZJz+rJqsPZewzz4jjMXkXYFw=
 github.com/giantswarm/apiextensions/v3 v3.4.0/go.mod h1:MMLkRJta4mbTbrikP9LewADiCL+55LmsagyhdTU7XAY=
-github.com/giantswarm/apiextensions/v3 v3.7.0 h1:KUAjZn3OMMkmTWvgAfAPTLdrNbFY2zukMntdeLhMGY4=
-github.com/giantswarm/apiextensions/v3 v3.7.0/go.mod h1:MMLkRJta4mbTbrikP9LewADiCL+55LmsagyhdTU7XAY=
-github.com/giantswarm/app/v3 v3.2.0 h1:pBVQ22hRytYEM4WBv2iztBczBcWomxSiOdgLHoiu9HA=
-github.com/giantswarm/app/v3 v3.2.0/go.mod h1:1P9plfrJ5IzG9sg4nw93a6G1mDSLUHBDL5TLaxlRTHc=
+github.com/giantswarm/apiextensions/v3 v3.8.0 h1:gRqlNE62k49EdXYKBaShH0jkFBoOuGPxIgEnD5SZCx4=
+github.com/giantswarm/apiextensions/v3 v3.8.0/go.mod h1:MMLkRJta4mbTbrikP9LewADiCL+55LmsagyhdTU7XAY=
+github.com/giantswarm/app/v3 v3.2.1-0.20201113134454-b8c4868e92c6 h1:vtIMcB0RbyhnaWNyRijD8l3fVM29MP7/Ttu9o0AXpQA=
+github.com/giantswarm/app/v3 v3.2.1-0.20201113134454-b8c4868e92c6/go.mod h1:1+kDyJBXp127yVXTdqfgWfGp50V4LkIq1lSDXBizICk=
 github.com/giantswarm/backoff v0.2.0/go.mod h1:Z3WRsFilSJ5H5VlFa4XhraoPr+9pmZgYasoY2OSfNOk=
 github.com/giantswarm/cluster-api v0.3.10-gs h1:l2LpZlN97t7RRwKf4OBfNA2h1oVnZXWC68TFRfBMu5c=
 github.com/giantswarm/cluster-api v0.3.10-gs/go.mod h1:878STePVJcBNDYFY2eCsLuHXWs6qiH3INFItEwdfWaE=
