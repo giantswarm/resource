@@ -7,7 +7,7 @@ require (
 	github.com/giantswarm/app/v3 v3.2.1-0.20201113134454-b8c4868e92c6
 	github.com/giantswarm/microerror v0.2.1
 	github.com/giantswarm/micrologger v0.3.4
-	github.com/giantswarm/operatorkit/v2 v2.0.0
+	github.com/giantswarm/operatorkit/v4 v4.0.0
 	k8s.io/apimachinery v0.18.9
 )
 
