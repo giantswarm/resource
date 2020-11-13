@@ -11,7 +11,5 @@ require (
 	k8s.io/apimachinery v0.18.9
 )
 
-replace (
-	// Use fork of CAPI with Kubernetes 1.18 support.
-	sigs.k8s.io/cluster-api => github.com/giantswarm/cluster-api v0.3.10-gs
-)
+// Use fork of CAPI with Kubernetes 1.18 support.
+replace sigs.k8s.io/cluster-api => github.com/giantswarm/cluster-api v0.3.10-gs
