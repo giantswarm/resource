@@ -5,6 +5,7 @@ import (
 	"fmt"
 
 	"github.com/giantswarm/apiextensions/v3/pkg/apis/application/v1alpha1"
+	"github.com/giantswarm/app/v3/pkg/validation"
 	"github.com/giantswarm/microerror"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
@@ -19,7 +20,9 @@ func (r *Resource) ApplyUpdateChange(ctx context.Context, obj, updateChange inte
 		r.logger.LogCtx(ctx, "level", "debug", "message", fmt.Sprintf("updating App CR %#q in namespace %#q", appCR.Name, appCR.Namespace))
 
 		_, err = r.g8sClient.ApplicationV1alpha1().Apps(appCR.Namespace).Update(ctx, appCR, metav1.UpdateOptions{})
-		if err != nil {
+		if validation.IsKubeConfigNotFound(err) {
+			r.logger.LogCtx(ctx, "level", "debug", "message", fmt.Sprintf("kubeconfig secret for App CR %#q in namespace %#q does not exist yet", appCR.Name, appCR.Namespace))
+		} else if err != nil {
 			return microerror.Mask(err)
 		}
 
