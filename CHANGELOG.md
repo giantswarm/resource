@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.1] - 2020-11-23
+
 ### Changed
 
 - Update `apiextensions`, `operatorkit` dependencies.
@@ -36,7 +38,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-[Unreleased]: https://github.com/giantswarm/resource/compare/v2.0.0...HEAD
+[Unreleased]: https://github.com/giantswarm/resource/compare/v2.0.1...HEAD
+[2.0.1]: https://github.com/giantswarm/resource/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/giantswarm/resource/compare/v0.2.0...v2.0.0
 [0.2.0]: https://github.com/giantswarm/resource/compare/v0.1.0...v0.2.0
 
