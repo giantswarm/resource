@@ -9,13 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Changed
-
-- Updated apiextensions to v3.
-
 ### Fixed
 
 - Handle validation errors if kubeconfig for app CRs is not created yet.
+
+## [2.0.1] - 2020-11-23
+
+### Changed
+
+- Update `apiextensions`, `operatorkit` dependencies.
 
 ## [2.0.0] - 2020-08-11
 
@@ -40,7 +42,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-[Unreleased]: https://github.com/giantswarm/resource/compare/v2.0.0...HEAD
+[Unreleased]: https://github.com/giantswarm/resource/compare/v2.0.1...HEAD
+[2.0.1]: https://github.com/giantswarm/resource/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/giantswarm/resource/compare/v0.2.0...v2.0.0
 [0.2.0]: https://github.com/giantswarm/resource/compare/v0.1.0...v0.2.0
 
