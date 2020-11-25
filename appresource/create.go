@@ -24,8 +24,14 @@ func (r *Resource) ApplyCreateChange(ctx context.Context, obj, createChange inte
 		_, err = r.g8sClient.ApplicationV1alpha1().Apps(appCR.Namespace).Create(ctx, appCR, metav1.CreateOptions{})
 		if apierrors.IsAlreadyExists(err) {
 			r.logger.LogCtx(ctx, "level", "debug", "message", fmt.Sprintf("already created App CR %#q in namespace %#q", appCR.Name, appCR.Namespace))
+		} else if validation.IsAppConfigMapNotFound(err) {
+			// Don't return error as there can be a delay for the cluster configmap being created on cluster creation.
+			r.logger.LogCtx(ctx, "level", "debug", "message", fmt.Sprintf("configmap for App CR %#q in namespace %#q does not exist yet", appCR.Name, appCR.Namespace))
+			continue
 		} else if validation.IsKubeConfigNotFound(err) {
+			// Don't return error as there can be a delay for the cluster kubeconfig being created on cluster creation.
 			r.logger.LogCtx(ctx, "level", "debug", "message", fmt.Sprintf("kubeconfig secret for App CR %#q in namespace %#q does not exist yet", appCR.Name, appCR.Namespace))
+			continue
 		} else if err != nil {
 			return microerror.Mask(err)
 		} else {
