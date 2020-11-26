@@ -4,7 +4,7 @@ go 1.15
 
 require (
 	github.com/giantswarm/apiextensions/v3 v3.8.0
-	github.com/giantswarm/app/v3 v3.3.1-0.20201125171539-804e2ceca77c
+	github.com/giantswarm/app/v3 v3.3.1-0.20201126093846-304e2ba5593a
 	github.com/giantswarm/microerror v0.2.1
 	github.com/giantswarm/micrologger v0.3.4
 	github.com/giantswarm/operatorkit/v4 v4.0.0
