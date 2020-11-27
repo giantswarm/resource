@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Handle validation errors from app-admission-controller if configmap or
+kubeconfig are not created yet.
+
 ## [2.0.1] - 2020-11-23
 
 ### Changed
