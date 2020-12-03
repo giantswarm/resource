@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.2.0] - 2020-12-03
+
 ### Added
 
 - Allow annotations from current app CR to remain if config has these. 
@@ -49,7 +51,8 @@ kubeconfig are not created yet.
 
 
 
-[Unreleased]: https://github.com/giantswarm/resource/compare/v2.1.0...HEAD
+[Unreleased]: https://github.com/giantswarm/resource/compare/v2.2.0...HEAD
+[2.2.0]: https://github.com/giantswarm/resource/compare/v2.1.0...v2.2.0
 [2.1.0]: https://github.com/giantswarm/resource/compare/v2.0.1...v2.1.0
 [2.0.1]: https://github.com/giantswarm/resource/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/giantswarm/resource/compare/v0.2.0...v2.0.0
