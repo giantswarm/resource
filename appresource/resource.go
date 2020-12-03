@@ -14,7 +14,7 @@ type Config struct {
 	StateGetter StateGetter
 
 	AllowedAnnotations []string
-	Name string
+	Name               string
 }
 
 type Resource struct {
