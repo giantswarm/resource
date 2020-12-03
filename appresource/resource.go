@@ -13,6 +13,7 @@ type Config struct {
 	Logger      micrologger.Logger
 	StateGetter StateGetter
 
+	AllowedAnnotations []string
 	Name string
 }
 
@@ -21,7 +22,8 @@ type Resource struct {
 	logger      micrologger.Logger
 	stateGetter StateGetter
 
-	name string
+	allowedAnnotations map[string]bool
+	name               string
 }
 
 func New(config Config) (*Resource, error) {
@@ -45,6 +47,17 @@ func New(config Config) (*Resource, error) {
 		stateGetter: config.StateGetter,
 
 		name: config.Name,
+	}
+
+	if config.AllowedAnnotations != nil {
+		allowedAnnotation := map[string]bool{}
+		{
+			for _, annotation := range config.AllowedAnnotations {
+				allowedAnnotation[annotation] = true
+			}
+		}
+
+		r.allowedAnnotations = allowedAnnotation
 	}
 
 	return r, nil

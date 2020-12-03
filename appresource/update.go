@@ -56,7 +56,7 @@ func (r *Resource) newUpdateChange(ctx context.Context, obj, currentState, desir
 
 		for _, c := range currentAppCRs {
 			for _, d := range desiredAppCRs {
-				m := newAppCRToUpdate(c, d)
+				m := newAppCRToUpdate(c, d, r.allowedAnnotations)
 				if m != nil {
 					appCRsToUpdate = append(appCRsToUpdate, m)
 				}
