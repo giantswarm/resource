@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Update `giantswarm/app` to v4.2.0.
+
 ## [2.3.0] - 2020-12-10
 
 ### Added
@@ -19,7 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Allow annotations from current app CR to remain if config has these. 
+- Allow annotations from current app CR to remain if config has these.
 
 ## [2.1.0] - 2020-11-27
 
