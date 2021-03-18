@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/giantswarm/apiextensions/v3/pkg/apis/application/v1alpha1"
 	"github.com/giantswarm/app/v4/pkg/validation"
 	"github.com/giantswarm/microerror"
-
-	"github.com/giantswarm/apiextensions/v3/pkg/apis/application/v1alpha1"
+	"github.com/google/go-cmp/cmp"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
@@ -66,6 +66,9 @@ func (r *Resource) newUpdateChange(ctx context.Context, obj, currentState, desir
 			for _, d := range desiredAppCRs {
 				m := newAppCRToUpdate(c, d, r.allowedAnnotations)
 				if m != nil {
+					if diff := cmp.Diff(c, d); diff != "" {
+						r.logger.LogCtx(ctx, "level", "debug", "message", fmt.Sprintf("app CR %#q has to be updated", m.Name), "diff", fmt.Sprintf("(-current +desired):\n%s", diff))
+					}
 					appCRsToUpdate = append(appCRsToUpdate, m)
 				}
 			}
