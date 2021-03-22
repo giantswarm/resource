@@ -56,7 +56,7 @@ func (r *Resource) newCreateChange(ctx context.Context, obj, currentState, desir
 
 	var appCRsToCreate []*v1alpha1.App
 	{
-		r.logger.LogCtx(ctx, "level", "debug", "message", fmt.Sprintf("computing App CRs to create "))
+		r.logger.LogCtx(ctx, "level", "debug", "message", "computing App CRs to create ")
 
 		for _, d := range desiredAppCRs {
 			if !containsAppCR(currentAppCRs, d) {
