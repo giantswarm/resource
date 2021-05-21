@@ -1,10 +1,10 @@
 module github.com/giantswarm/resource/v2
 
-go 1.14
+go 1.16
 
 require (
 	github.com/giantswarm/apiextensions/v3 v3.22.0
-	github.com/giantswarm/app/v4 v4.12.0
+	github.com/giantswarm/app/v4 v4.13.0
 	github.com/giantswarm/microerror v0.3.0
 	github.com/giantswarm/micrologger v0.5.0
 	github.com/giantswarm/operatorkit/v4 v4.3.1
