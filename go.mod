@@ -1,6 +1,6 @@
 module github.com/giantswarm/resource/v2
 
-go 1.16
+go 1.15
 
 require (
 	github.com/giantswarm/apiextensions/v3 v3.22.0
