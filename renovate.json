@@ -25,6 +25,7 @@
       "allowedVersions": "< 0.7.0"
     }
   ],
+  "dependencyDashboard": true,
   "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],
   "ignoreDeps": ["zricethezav/gitleaks-action"],
   "schedule": [ "after 9am on thursday" ]
