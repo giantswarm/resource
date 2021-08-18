@@ -12,4 +12,8 @@ require (
 )
 
 // keep in sync with giantswarm/apiextensions
-replace sigs.k8s.io/cluster-api => github.com/giantswarm/cluster-api v0.3.10-gs
+replace (
+
+	github.com/dgrijalva/jwt-go => github.com/dgrijalva/jwt-go/v4 v4.0.0-preview1
+	sigs.k8s.io/cluster-api => github.com/giantswarm/cluster-api v0.3.10-gs
+)
