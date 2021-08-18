@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Update `giantswarm/operatorkit` from v4 to v5.
+
+### Changed
+
 - Update `giantswarm/app` to v4.2.0.
 
 ## [2.3.0] - 2020-12-10
