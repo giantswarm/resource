@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/giantswarm/app/v4/pkg/validation"
+	"github.com/giantswarm/app/v5/pkg/validation"
 	"github.com/giantswarm/microerror"
 
 	"github.com/giantswarm/apiextensions/v3/pkg/apis/application/v1alpha1"
