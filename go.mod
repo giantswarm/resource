@@ -3,7 +3,7 @@ module github.com/giantswarm/resource/v3
 go 1.14
 
 require (
-	github.com/giantswarm/apiextensions/v3 v3.34.0
+	github.com/giantswarm/apiextensions/v3 v3.35.0
 	github.com/giantswarm/app/v5 v5.3.0
 	github.com/giantswarm/microerror v0.3.0
 	github.com/giantswarm/micrologger v0.5.0
