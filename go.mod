@@ -8,7 +8,7 @@ require (
 	github.com/giantswarm/microerror v0.3.0
 	github.com/giantswarm/micrologger v0.5.0
 	github.com/giantswarm/operatorkit/v5 v5.0.0
-	k8s.io/apimachinery v0.18.19
+	k8s.io/apimachinery v0.20.13
 )
 
 // keep in sync with giantswarm/apiextensions
