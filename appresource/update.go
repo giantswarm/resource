@@ -4,11 +4,11 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/giantswarm/app/v5/pkg/validation"
+	"github.com/giantswarm/app/v6/pkg/validation"
 	"github.com/giantswarm/microerror"
+	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/giantswarm/apiextensions/v3/pkg/apis/application/v1alpha1"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	"github.com/giantswarm/apiextensions-application/api/v1alpha1"
 )
 
 func (r *Resource) ApplyUpdateChange(ctx context.Context, obj, updateChange interface{}) error {
@@ -21,14 +21,18 @@ func (r *Resource) ApplyUpdateChange(ctx context.Context, obj, updateChange inte
 		r.logger.LogCtx(ctx, "level", "debug", "message", fmt.Sprintf("updating App CR %#q in namespace %#q", appCR.Name, appCR.Namespace))
 
 		// Get app CR again to ensure the resource version is correct.
-		currentCR, err := r.g8sClient.ApplicationV1alpha1().Apps(appCR.Namespace).Get(ctx, appCR.Name, metav1.GetOptions{})
+		var currentCR v1alpha1.App
+		err := r.g8sClient.Get(ctx, client.ObjectKey{
+			Namespace: appCR.Namespace,
+			Name:      appCR.Name,
+		}, &currentCR)
 		if err != nil {
 			return microerror.Mask(err)
 		}
 
 		appCR.ResourceVersion = currentCR.ResourceVersion
 
-		_, err = r.g8sClient.ApplicationV1alpha1().Apps(appCR.Namespace).Update(ctx, appCR, metav1.UpdateOptions{})
+		err = r.g8sClient.Update(ctx, appCR)
 		if validation.IsAppConfigMapNotFound(err) {
 			// Don't return error as there can be a delay for the cluster configmap being created on cluster creation.
 			r.logger.LogCtx(ctx, "level", "debug", "message", fmt.Sprintf("configmap for App CR %#q in namespace %#q does not exist yet", appCR.Name, appCR.Namespace))

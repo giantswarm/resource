@@ -3,13 +3,13 @@ package appresource
 import (
 	"github.com/giantswarm/microerror"
 	"github.com/giantswarm/micrologger"
+	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/giantswarm/apiextensions/v3/pkg/apis/application/v1alpha1"
-	"github.com/giantswarm/apiextensions/v3/pkg/clientset/versioned"
+	"github.com/giantswarm/apiextensions-application/api/v1alpha1"
 )
 
 type Config struct {
-	G8sClient   versioned.Interface
+	G8sClient   client.Client
 	Logger      micrologger.Logger
 	StateGetter StateGetter
 
@@ -18,7 +18,7 @@ type Config struct {
 }
 
 type Resource struct {
-	g8sClient   versioned.Interface
+	g8sClient   client.Client
 	logger      micrologger.Logger
 	stateGetter StateGetter
 
