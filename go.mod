@@ -3,11 +3,11 @@ module github.com/giantswarm/resource/v4
 go 1.17
 
 require (
-	github.com/giantswarm/apiextensions-application v0.2.0
-	github.com/giantswarm/app/v6 v6.1.0
+	github.com/giantswarm/apiextensions-application v0.3.0
+	github.com/giantswarm/app/v6 v6.2.0
 	github.com/giantswarm/microerror v0.4.0
 	github.com/giantswarm/micrologger v0.6.0
-	github.com/giantswarm/operatorkit/v6 v6.0.0
+	github.com/giantswarm/operatorkit/v6 v6.1.0
 	k8s.io/apimachinery v0.21.4
 	sigs.k8s.io/controller-runtime v0.9.7
 )
@@ -15,7 +15,7 @@ require (
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/evanphx/json-patch v4.11.0+incompatible // indirect
-	github.com/giantswarm/k8smetadata v0.6.0 // indirect
+	github.com/giantswarm/k8smetadata v0.7.1 // indirect
 	github.com/go-kit/log v0.2.0 // indirect
 	github.com/go-logfmt/logfmt v0.5.1 // indirect
 	github.com/go-logr/logr v0.4.0 // indirect
