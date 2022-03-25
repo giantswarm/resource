@@ -1,4 +1,4 @@
-module github.com/giantswarm/resource/v4
+module github.com/giantswarm/resource/v5
 
 go 1.17
 
