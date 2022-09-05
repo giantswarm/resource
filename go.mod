@@ -1,6 +1,6 @@
 module github.com/giantswarm/resource/v5
 
-go 1.18
+go 1.19
 
 require (
 	github.com/giantswarm/apiextensions-application v0.5.1
@@ -55,6 +55,6 @@ require (
 replace (
 	github.com/coreos/etcd => github.com/coreos/etcd v3.3.25+incompatible
 	github.com/dgrijalva/jwt-go => github.com/dgrijalva/jwt-go/v4 v4.0.0-preview1
-	github.com/hashicorp/consul/api => github.com/hashicorp/consul/api v1.13.0
-	github.com/hashicorp/consul/sdk => github.com/hashicorp/consul/sdk v0.9.0
+	github.com/hashicorp/consul/api => github.com/hashicorp/consul/api v1.14.0
+	github.com/hashicorp/consul/sdk => github.com/hashicorp/consul/sdk v0.11.0
 )
