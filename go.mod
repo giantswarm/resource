@@ -1,6 +1,6 @@
 module github.com/giantswarm/resource/v5
 
-go 1.18
+go 1.19
 
 require (
 	github.com/giantswarm/apiextensions-application v0.5.1
