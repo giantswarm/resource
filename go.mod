@@ -3,8 +3,8 @@ module github.com/giantswarm/resource/v5
 go 1.18
 
 require (
-	github.com/giantswarm/apiextensions-application v0.5.1
-	github.com/giantswarm/app/v6 v6.13.0
+	github.com/giantswarm/apiextensions-application v0.6.0
+	github.com/giantswarm/app/v6 v6.15.0
 	github.com/giantswarm/microerror v0.4.0
 	github.com/giantswarm/micrologger v0.6.0
 	github.com/giantswarm/operatorkit/v7 v7.1.0
