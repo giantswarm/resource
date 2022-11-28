@@ -6,6 +6,9 @@ CVE-2022-29153 until=2022-12-31
 CVE-2022-24687 until=2022-12-31
 CVE-2022-29153 until=2022-12-31
 
+# pkg:golang/golang.org/x/text@v0.3.7
+CVE-2022-32149 until=2022-12-31
+
 # pkg:golang/github.com/hashicorp/consul/api@v1.14.0
 # pkg:golang/github.com/hashicorp/consul/sdk@v0.11.0
 CVE-2021-41803 until=2022-12-31
