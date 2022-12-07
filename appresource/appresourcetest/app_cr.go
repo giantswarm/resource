@@ -15,7 +15,6 @@ import (
 //		v.Name = "test-app-2"
 //		v.Spec.Catalog = "test-spec-catalog-2"
 //	})
-//
 func NewAppCRFromFilled(modifyFunc func(v *applicationv1alpha1.App)) *applicationv1alpha1.App {
 	appCR := &applicationv1alpha1.App{
 		TypeMeta: applicationv1alpha1.NewAppTypeMeta(),
