@@ -34,9 +34,9 @@ require (
 	go.uber.org/zap v1.19.1 // indirect
 	golang.org/x/net v0.2.0 // indirect
 	golang.org/x/oauth2 v0.2.0 // indirect
-	golang.org/x/sys v0.2.0 // indirect
-	golang.org/x/term v0.2.0 // indirect
-	golang.org/x/text v0.4.0 // indirect
+	golang.org/x/sys v0.3.0 // indirect
+	golang.org/x/term v0.3.0 // indirect
+	golang.org/x/text v0.5.0 // indirect
 	golang.org/x/time v0.0.0-20220609170525-579cf78fd858 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
@@ -57,4 +57,5 @@ replace (
 	github.com/dgrijalva/jwt-go => github.com/dgrijalva/jwt-go/v4 v4.0.0-preview1
 	github.com/hashicorp/consul/api => github.com/hashicorp/consul/api v1.18.0
 	github.com/hashicorp/consul/sdk => github.com/hashicorp/consul/sdk v0.13.0
+	golang.org/x/net v0.2.0 => golang.org/x/net v0.4.0
 )
