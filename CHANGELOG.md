@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [6.0.0] - 2023-05-02
+
 ### Changed
 
 - Bump dependencies.
@@ -97,7 +99,8 @@ kubeconfig are not created yet.
 
 
 
-[Unreleased]: https://github.com/giantswarm/resource/compare/v5.1.0...HEAD
+[Unreleased]: https://github.com/giantswarm/resource/compare/v6.0.0...HEAD
+[6.0.0]: https://github.com/giantswarm/resource/compare/v5.1.0...v6.0.0
 [5.1.0]: https://github.com/giantswarm/resource/compare/v5.0.0...v5.1.0
 [5.0.0]: https://github.com/giantswarm/resource/compare/v4.0.0...v5.0.0
 [4.0.0]: https://github.com/giantswarm/resource/compare/v3.0.2...v4.0.0
