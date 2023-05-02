@@ -1,4 +1,4 @@
-module github.com/giantswarm/resource/v5
+module github.com/giantswarm/resource/v6
 
 go 1.19
 
