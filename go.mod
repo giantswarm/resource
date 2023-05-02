@@ -63,7 +63,7 @@ require (
 replace (
 	github.com/coreos/etcd => github.com/coreos/etcd v3.3.27+incompatible
 	github.com/dgrijalva/jwt-go => github.com/dgrijalva/jwt-go/v4 v4.0.0-preview1
-	github.com/hashicorp/consul/api => github.com/hashicorp/consul/api v1.18.0
-	github.com/hashicorp/consul/sdk => github.com/hashicorp/consul/sdk v0.13.0
+	github.com/hashicorp/consul/api => github.com/hashicorp/consul/api v1.20.0
+	github.com/hashicorp/consul/sdk => github.com/hashicorp/consul/sdk v0.13.1
 	golang.org/x/net v0.2.0 => golang.org/x/net v0.4.0
 )
