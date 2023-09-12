@@ -1,4 +1,4 @@
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/giantswarm/resource/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/giantswarm/resource/tree/master)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/giantswarm/resource/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/giantswarm/resource/tree/main)
 
 # Resource
 
