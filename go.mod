@@ -41,9 +41,9 @@ require (
 	go.uber.org/multierr v1.7.0 // indirect
 	golang.org/x/net v0.14.0 // indirect
 	golang.org/x/oauth2 v0.11.0 // indirect
-	golang.org/x/sys v0.13.0 // indirect
-	golang.org/x/term v0.13.0 // indirect
-	golang.org/x/text v0.13.0 // indirect
+	golang.org/x/sys v0.14.0 // indirect
+	golang.org/x/term v0.14.0 // indirect
+	golang.org/x/text v0.14.0 // indirect
 	golang.org/x/time v0.3.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
@@ -66,7 +66,7 @@ replace (
 	github.com/hashicorp/consul/api => github.com/hashicorp/consul/api v1.26.1
 	github.com/hashicorp/consul/sdk => github.com/hashicorp/consul/sdk v0.15.0
 	// CVE-2023-3978
-	golang.org/x/net => golang.org/x/net v0.17.0
+	golang.org/x/net => golang.org/x/net v0.18.0
 	// CVE-2023-32731
 	google.golang.org/grpc => google.golang.org/grpc v1.59.0
 )
