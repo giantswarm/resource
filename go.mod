@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/giantswarm/apiextensions-application v0.6.0
-	github.com/giantswarm/app/v6 v6.15.6
+	github.com/giantswarm/app/v7 v7.0.0
 	github.com/giantswarm/microerror v0.4.1
 	github.com/giantswarm/micrologger v1.1.1
 	github.com/giantswarm/operatorkit/v8 v8.0.0
