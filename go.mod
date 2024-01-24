@@ -39,8 +39,8 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	go.uber.org/multierr v1.7.0 // indirect
-	golang.org/x/net v0.16.0 // indirect
-	golang.org/x/oauth2 v0.13.0 // indirect
+	golang.org/x/net v0.18.0 // indirect
+	golang.org/x/oauth2 v0.14.0 // indirect
 	golang.org/x/sys v0.16.0 // indirect
 	golang.org/x/term v0.16.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
@@ -62,5 +62,5 @@ require (
 
 replace (
 	golang.org/x/net => golang.org/x/net v0.20.0
-	google.golang.org/grpc => google.golang.org/grpc v1.60.1
+	google.golang.org/grpc => google.golang.org/grpc v1.61.0
 )
