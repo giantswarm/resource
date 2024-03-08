@@ -1,12 +1,2 @@
-# pkg:golang/github.com/hashicorp/consul/api@v1.18.0
-CVE-2022-29153 until=2023-12-31
-
-# pkg:golang/github.com/hashicorp/consul/sdk@v0.13.0
-CVE-2022-29153 until=2023-12-31
-CVE-2021-41803 until=2023-12-31
-
-# pkg:golang/golang.org/x/net@v0.4.0
-CVE-2022-41723 until=2023-12-31
-
-# pkg:golang/k8s.io/apiserver@v0.21.4
-sonatype-2022-6522 until=2023-12-31
+# pkg:golang/google.golang.org/protobuf
+CVE-2024-24786 until=2024-03-31
