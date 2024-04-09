@@ -62,5 +62,5 @@ require (
 
 replace (
 	golang.org/x/net => golang.org/x/net v0.24.0
-	google.golang.org/grpc => google.golang.org/grpc v1.63.0
+	google.golang.org/grpc => google.golang.org/grpc v1.63.2
 )
