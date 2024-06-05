@@ -5,8 +5,8 @@ go 1.21
 toolchain go1.22.3
 
 require (
-	github.com/giantswarm/apiextensions-application v0.6.1
-	github.com/giantswarm/app/v7 v7.0.1
+	github.com/giantswarm/apiextensions-application v0.6.2
+	github.com/giantswarm/app/v7 v7.0.2
 	github.com/giantswarm/microerror v0.4.1
 	github.com/giantswarm/micrologger v1.1.1
 	github.com/giantswarm/operatorkit/v8 v8.0.0
@@ -20,7 +20,7 @@ require (
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/emicklei/go-restful v2.16.0+incompatible // indirect
 	github.com/evanphx/json-patch v4.12.0+incompatible // indirect
-	github.com/giantswarm/k8smetadata v0.24.0 // indirect
+	github.com/giantswarm/k8smetadata v0.25.0 // indirect
 	github.com/go-kit/log v0.2.1 // indirect
 	github.com/go-logfmt/logfmt v0.6.0 // indirect
 	github.com/go-logr/logr v1.4.1 // indirect
@@ -42,7 +42,7 @@ require (
 	go.uber.org/atomic v1.9.0 // indirect
 	go.uber.org/multierr v1.7.0 // indirect
 	golang.org/x/net v0.25.0 // indirect
-	golang.org/x/oauth2 v0.19.0 // indirect
+	golang.org/x/oauth2 v0.20.0 // indirect
 	golang.org/x/sys v0.21.0 // indirect
 	golang.org/x/term v0.21.0 // indirect
 	golang.org/x/text v0.16.0 // indirect
@@ -53,7 +53,7 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	k8s.io/api v0.24.2 // indirect
 	k8s.io/client-go v0.24.2 // indirect
-	k8s.io/klog/v2 v2.60.1 // indirect
+	k8s.io/klog/v2 v2.120.1 // indirect
 	k8s.io/kube-openapi v0.0.0-20220328201542-3ee0da9b0b42 // indirect
 	k8s.io/utils v0.0.0-20220210201930-3a6ce19ff2f9 // indirect
 	sigs.k8s.io/json v0.0.0-20211208200746-9f7c6b3444d2 // indirect
