@@ -9,7 +9,7 @@ require (
 	github.com/giantswarm/app/v7 v7.0.2
 	github.com/giantswarm/microerror v0.4.1
 	github.com/giantswarm/micrologger v1.1.1
-	github.com/giantswarm/operatorkit/v7 v7.2.0
+	github.com/giantswarm/operatorkit/v8 v8.0.0
 	k8s.io/apimachinery v0.30.1
 	sigs.k8s.io/controller-runtime v0.18.4
 )
